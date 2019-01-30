@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context="abnd.datastorage.bookstoreinventory.EditorActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:padding="@dimen/small_spacing">
+
+        <LinearLayout
+            android:id="@+id/ll_book_name"
+            style="@style/EditorLinearLayout"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/tv_book_title"
+                style="@style/EditorTextView"
+                android:text="@string/title" />
+
+            <EditText
+                android:id="@+id/et_book_name"
+                style="@style/EditorEdit"
+                android:hint="@string/title"
+                android:inputType="text" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_author_name"
+            style="@style/EditorLinearLayout"
+            app:layout_constraintTop_toBottomOf="@+id/ll_book_name">
+
+
+            <TextView
+                android:id="@+id/tv_author_name"
+                style="@style/EditorTextView"
+                android:text="@string/author" />
+
+            <EditText
+                android:id="@+id/et_author_name"
+                style="@style/EditorEdit"
+                android:hint="@string/author"
+                android:inputType="textPersonName" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_book_type"
+            style="@style/EditorLinearLayout"
+            app:layout_constraintTop_toBottomOf="@+id/ll_author_name">
+
+            <TextView
+                android:id="@+id/tv_book_type"
+                style="@style/EditorTextView"
+                android:text="@string/type" />
+
+            <Spinner
+                android:id="@+id/spinner_type"
+                style="@style/EditorEdit" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_book_genre"
+            style="@style/EditorLinearLayout"
+            app:layout_constraintTop_toBottomOf="@+id/ll_book_type">
+
+            <TextView
+                android:id="@+id/tv_book_genre"
+                style="@style/EditorTextView"
+                android:text="@string/genre" />
+
+            <Spinner
+                android:id="@+id/spinner_genre"
+                style="@style/EditorEdit" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_book_price"
+            style="@style/EditorLinearLayout"
+            app:layout_constraintTop_toBottomOf="@+id/ll_book_genre">
+
+            <TextView
+                android:id="@+id/tv_book_price"
+                style="@style/EditorTextView"
+                android:layout_weight="2"
+                android:text="@string/price" />
+
+            <TextView
+                android:id="@+id/tv_price_currency"
+                style="@style/EditorTextView"
+                android:text="@string/currency"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/et_book_price"
+                style="@style/EditorEdit"
+                android:layout_weight="3"
+                android:inputType="number"
+                android:text="@string/number_default" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_book_quantity"
+            style="@style/EditorLinearLayout"
+            app:layout_constraintTop_toBottomOf="@+id/ll_book_price">
+
+            <TextView
+                android:id="@+id/tv_book_quantity"
+                style="@style/EditorTextView"
+                android:layout_weight="2"
+                android:text="@string/quantity" />
+
+            <Button
+                android:id="@+id/btn_quantity_inc"
+                android:layout_width="@dimen/no_spacing"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/title_bg"
+                android:text="@string/plus_sign"
+                android:textColor="@color/colorPrimary" />
+
+            <EditText
+                android:id="@+id/et_book_quantity"
+                style="@style/EditorEdit"
+                android:inputType="number"
+                android:text="@string/number_default"
+                android:textAlignment="center" />
+
+            <Button
+                android:id="@+id/btn_quantity_dec"
+                android:layout_width="@dimen/no_spacing"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/title_bg"
+                android:text="@string/minus_sign"
+                android:textColor="@color/colorPrimary" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_publisher_name"
+            style="@style/EditorLinearLayout"
+            app:layout_constraintTop_toBottomOf="@+id/ll_book_quantity">
+
+            <TextView
+                android:id="@+id/tv_publisher_name"
+                style="@style/EditorTextView"
+                android:text="@string/publisher_name" />
+
+            <EditText
+                android:id="@+id/et_publisher_name"
+                style="@style/EditorEdit"
+                android:hint="@string/publisher_name"
+                android:inputType="textPersonName" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_publisher_phone"
+            style="@style/EditorLinearLayout"
+            app:layout_constraintTop_toBottomOf="@+id/ll_publisher_name">
+
+            <TextView
+                android:id="@+id/tv_publisher_phone"
+                style="@style/EditorTextView"
+                android:text="@string/publisher_phone" />
+
+            <EditText
+                android:id="@+id/et_publisher_phone"
+                style="@style/EditorEdit"
+                android:hint="@string/publisher_phone"
+                android:inputType="number" />
+
+        </LinearLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,49 @@
+<resources>
+
+    <!--App theme-->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">#ffd500</item>
+        <item name="colorPrimaryDark">#303F9F</item>
+        <item name="colorAccent">#303F9F</item>
+    </style>
+
+    <!--List item style-->
+    <style name="ListItem">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/small_spacing</item>
+        <item name="android:layout_marginStart">@dimen/small_spacing</item>
+        <item name="android:layout_marginTop">@dimen/small_spacing</item>
+        <item name="android:textAppearance">?android:textAppearanceSmall</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+    </style>
+
+    <!--EditorActivity LinearLayout style-->
+    <style name="EditorLinearLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginEnd">@dimen/small_spacing</item>
+        <item name="android:layout_marginStart">@dimen/small_spacing</item>
+        <item name="android:layout_marginTop">@dimen/small_spacing</item>
+        <item name="layout_constraintEnd_toEndOf">parent</item>
+        <item name="layout_constraintStart_toStartOf">parent</item>
+    </style>
+
+    <!--EditorActivity TextView style-->
+    <style name="EditorTextView">
+        <item name="android:layout_width">@dimen/no_spacing</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textAppearance">?android:textAppearanceSmall</item>
+    </style>
+
+    <!--EditorActivity EditText style-->
+    <style name="EditorEdit">
+        <item name="android:layout_width">@dimen/no_spacing</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">2</item>
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+    </style>
+
+</resources>

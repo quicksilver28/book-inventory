@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="array_book_type">
+        <item>@string/type_paperback</item>
+        <item>@string/type_hardcover</item>
+    </string-array>
+
+    <string-array name="array_book_genre">
+        <item>@string/genre_default</item>
+        <item>@string/genre_fiction</item>
+        <item>@string/genre_non_fiction</item>
+        <item>@string/genre_mystery</item>
+        <item>@string/genre_crime</item>
+        <item>@string/genre_romance</item>
+        <item>@string/genre_educational</item>
+        <item>@string/genre_self_help</item>
+        <item>@string/genre_biography</item>
+    </string-array>
+
+</resources>
